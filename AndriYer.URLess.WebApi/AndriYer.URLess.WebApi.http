@@ -1,0 +1,6 @@
+@AndriYer.URLess.WebApi_HostAddress = http://localhost:5249
+
+GET {{AndriYer.URLess.WebApi_HostAddress}}/Test01/
+Accept: application/json
+
+###

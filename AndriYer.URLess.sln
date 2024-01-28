@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndriYer.URLess.WebApi", "AndriYer.URLess.WebApi\AndriYer.URLess.WebApi.csproj", "{AC9669EB-9FF1-40EC-9E6C-F419F75C1780}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E68AF19E-8245-4BBB-871F-1B08FE234F6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndriYer.URLess.WebApi.Tests", "AndriYer.URLess.WebApi.Tests\AndriYer.URLess.WebApi.Tests.csproj", "{08C919AA-E04D-4CBE-955F-842FC224EE44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndriYer.URLess.Application", "AndriYer.URLess.Application\AndriYer.URLess.Application.csproj", "{6376C1F8-8867-43F1-A174-BCA2F3A727CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndriYer.URLess.Data", "AndriYer.URLess.Data\AndriYer.URLess.Data.csproj", "{AE405E25-97F7-4D89-8462-3DF501D2CDBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndriYer.URLess.Domain", "..\AndriYer.URLess\AndriYer.URLess.Domain\AndriYer.URLess.Domain.csproj", "{A5B8BA2D-FE03-499D-9A0E-C44FAA640855}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC9669EB-9FF1-40EC-9E6C-F419F75C1780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC9669EB-9FF1-40EC-9E6C-F419F75C1780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC9669EB-9FF1-40EC-9E6C-F419F75C1780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC9669EB-9FF1-40EC-9E6C-F419F75C1780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08C919AA-E04D-4CBE-955F-842FC224EE44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C919AA-E04D-4CBE-955F-842FC224EE44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C919AA-E04D-4CBE-955F-842FC224EE44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C919AA-E04D-4CBE-955F-842FC224EE44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6376C1F8-8867-43F1-A174-BCA2F3A727CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6376C1F8-8867-43F1-A174-BCA2F3A727CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6376C1F8-8867-43F1-A174-BCA2F3A727CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6376C1F8-8867-43F1-A174-BCA2F3A727CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE405E25-97F7-4D89-8462-3DF501D2CDBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE405E25-97F7-4D89-8462-3DF501D2CDBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE405E25-97F7-4D89-8462-3DF501D2CDBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE405E25-97F7-4D89-8462-3DF501D2CDBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5B8BA2D-FE03-499D-9A0E-C44FAA640855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5B8BA2D-FE03-499D-9A0E-C44FAA640855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5B8BA2D-FE03-499D-9A0E-C44FAA640855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5B8BA2D-FE03-499D-9A0E-C44FAA640855}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{08C919AA-E04D-4CBE-955F-842FC224EE44} = {E68AF19E-8245-4BBB-871F-1B08FE234F6F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C84B79DA-98C4-49AE-927D-10A8349BFFEC}
+	EndGlobalSection
+EndGlobal
