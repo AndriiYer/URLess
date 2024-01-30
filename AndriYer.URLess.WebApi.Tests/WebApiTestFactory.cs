@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using AndriYer.URLess.Data.Contracts;
+using AndriYer.URLess.WebApi.Tests.Data;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.Configuration;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace AndriYer.URLess.WebApi.Tests
 {
@@ -24,7 +26,8 @@ namespace AndriYer.URLess.WebApi.Tests
             
             builder.ConfigureTestServices(services =>
             {
-                
+                services.AddSingleton<TestDataBase>();
+                services.AddScoped<IUrlRepository, TestUrlRepository>();
             });
         }
     }

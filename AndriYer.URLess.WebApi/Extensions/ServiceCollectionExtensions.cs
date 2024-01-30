@@ -10,7 +10,6 @@ namespace AndriYer.URLess.WebApi.Extensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
-            services.TryAddScoped<IUrlService, UrlService>();
             services.TryAddScoped<IShortUrlGenerator, ShortUrlGenerator>();
             services.TryAddScoped<IUrlRepository, UrlRepository>();
             

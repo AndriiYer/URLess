@@ -2,6 +2,7 @@
 {
     public interface IShortUrlGenerator
     {
-        string GenerateShortUrl(string longUrl);
+        Task<string> CreateShortUrl(string url);
+        Task<string?> GetOriginalUrl(string shortUrl);
     }
 }

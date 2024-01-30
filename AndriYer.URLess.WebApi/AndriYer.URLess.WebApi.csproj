@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AndriYer. URLess.Application\AndriYer. URLess.Application.csproj" />
+    <ProjectReference Include="..\AndriYer.URLess.Application\AndriYer.URLess.Application.csproj" />
     <ProjectReference Include="..\AndriYer.URLess.Data\AndriYer.URLess.Data.csproj" />
   </ItemGroup>
 

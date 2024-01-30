@@ -4,7 +4,8 @@ namespace AndriYer.URLess.Data.Contracts
 {
     public interface IUrlRepository
     {
-        Task<Url> GetByShortUrlAsync(string shortUrl, CancellationToken cancellationToken = default);
-        Task AddOrUpdateAsync(Url url, CancellationToken cancellationToken = default);
+        Task<Url> GetByShortUrl(string shortUrl, CancellationToken cancellationToken = default);
+        Task Add(Url url, CancellationToken cancellationToken = default);
+        Task<bool> Contains(string shortUrl, CancellationToken cancellationToken = default);
     }
 }

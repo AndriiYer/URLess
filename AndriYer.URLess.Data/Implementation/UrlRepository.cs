@@ -1,18 +1,30 @@
 ﻿using AndriYer.URLess.Data.Contracts;
 using AndriYer.URLess.Domain.Models;
+using Microsoft.Extensions.Configuration;
 
 namespace AndriYer.URLess.Data.Implementation
 {
-    public class UrlRepository : IUrlRepository
+    public class UrlRepository(IConfiguration configuration) : IUrlRepository
     {
-        public Task<Url> GetByShortUrlAsync(string shortUrl, CancellationToken cancellationToken = default)
+        private readonly RedisDictionary _urlPairs = new(configuration["ConnectionStrings:Redis"]!);
+        
+        public Task<Url> GetByShortUrl(string shortUrl, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return Task.FromResult(new Url
+            {
+                RegularUrl = _urlPairs.TryGetValue(shortUrl, out var value) ? value : default, 
+                ShortUrl = shortUrl
+            });
         }
 
-        public Task AddOrUpdateAsync(Url url, CancellationToken cancellationToken = default)
+        public Task Add(Url url, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            _urlPairs[url.ShortUrl] = url.RegularUrl!;
+            
+            return Task.CompletedTask;
         }
+
+        public Task<bool> Contains(string shortUrl, CancellationToken cancellationToken = default) =>
+            Task.FromResult(_urlPairs.ContainsKey(shortUrl));
     }
 }
